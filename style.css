@@ -77,13 +77,4 @@ body {
   align-items: center;
   justify-content: center;
 }
-.btn {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 10px;
-  border: none;
-  background-color: #f06292;
-  color: white;
-}
+

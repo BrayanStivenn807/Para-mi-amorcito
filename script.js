@@ -45,5 +45,15 @@ function createBubble() {
     bubble.remove();
   }, 8000);
 }
-
+document.getElementById("btnMusica").addEventListener("click", function () {
+  const audio = document.getElementById("miAudio");
+  audio.play()
+    .then(() => {
+      this.style.display = "none"; // Oculta el botón después de iniciar la música
+    })
+    .catch(err => {
+      alert("Toca la pantalla para permitir la música");
+      console.error("Error al reproducir:", err);
+    });
+});
 setInterval(createBubble, 300);

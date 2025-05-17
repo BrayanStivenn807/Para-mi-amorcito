@@ -2,35 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bubbles love</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <div class="message">Te amooo mi Butsi buu</div>
   <div id="bubbles-text"></div>
 
   <!-- Contenedor de burbujas -->
   <div id="bubbles-container"></div>
 
-   <!-- Audio oculto -->
+  <!-- Audio oculto -->
   <audio id="miAudio" src="musica.mp3" preload="auto" loop></audio>
 
   <!-- Botón para reproducir -->
   <button id="btnMusica">Reproducir música</button>
 
-  <script>
-  document.getElementById("btnMusica").addEventListener("click", function () {
-    const audio = document.getElementById("miAudio");
-    audio.play()
-      .then(() => {
-        this.style.display = "none"; // Oculta el botón si quieres
-      })
-      .catch(err => {
-        alert("Toca la pantalla para permitir la música");
-        console.error("Error al reproducir:", err);
-      });
-  });
-</script>
+  <!-- Script con lógica -->
+  <script src="script.js"></script>
 </body>
 </html>
